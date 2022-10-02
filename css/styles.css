@@ -113,7 +113,14 @@ address {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.contact-icon {
+  fill: currentColor;
+}
+
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
@@ -126,6 +133,16 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
+  flex-grow: 1;
 }
 
 .hero-title {
@@ -193,6 +210,16 @@ address {
   max-width: 270px;
 }
 
+.personality-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .personality-text {
   line-height: calc(24 / 14);
 }
@@ -253,6 +280,68 @@ address {
   text-align: center;
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-icon {
+  fill: currentColor;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+}
+
+/* customers section */
+
+.customers-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--second-text-color);
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.customers-link {
+  border: 1px solid var(--primary-text-color);
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+}
+
+.team-soc-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /* footer */
 
 .footer {
@@ -300,6 +389,47 @@ address {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
+}
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.footer-soc-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--third-text-color);
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* page portfolio */
@@ -352,6 +482,16 @@ address {
 
 .work-item {
   width: 370px;
+}
+
+.work-link {
+  display: block;
+}
+
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-description {

@@ -301,6 +301,7 @@ address {
   fill: currentColor;
 }
 
+
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
@@ -334,10 +335,10 @@ address {
   justify-content: center;
 }
 
-.team-soc-icon {
+
+.customers-soc-icon {
   fill: currentColor;
 }
-
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--accent-color);
